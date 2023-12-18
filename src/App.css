@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #f4f4f4;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  order: 0; /* Move sidebar to the top on mobile */
+}
+
+#content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Style for navigation links */
+#sidebar a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+#sidebar a:hover {
+  background-color: #f4f4f4;
+}
+
+/* Style for active link */
+#sidebar a.active {
+  background-color: #ddd;
+}
+      #mobile-tabs a i {
+    font-size: 1.5rem;
+    opacity: 0;
+  }
+  .button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px; /* Adjust the max-width as needed */
+  position: absolute;
+  bottom: 70px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+  #sidebar {
+    display: none;
+    order: 2; /* Move content below sidebar on mobile */
+  }
+
+  #mobile-tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    
+  }
+
+  #mobile-tabs a {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+  }
+
+  #mobile-tabs a i {
+    font-size: 1.5rem;
+    opacity: 1;
+  }
+}
+
+/* Improved sidebar styles */
+#sidebar {
+  border-right: 1px solid #ddd;
+}
+
+#sidebar h1 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}

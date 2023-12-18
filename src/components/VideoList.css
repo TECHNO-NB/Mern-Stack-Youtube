@@ -1,0 +1,125 @@
+.videoMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 300px;
+    gap: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 370px;
+    height: 300px;
+    border: 2px solid #000;
+    padding: 0.4em;
+    border-radius: 4px;
+}
+
+.card img {
+    width: 350px;
+    height: 340px;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+
+
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    margin-left: 10px;
+
+}
+
+.logo .title {
+    font-size: 0.9em;
+   
+}
+
+.card h4 {
+    align-self: flex-start;
+    margin-top: -15px;
+    margin-left: 55px;
+    opacity: 0.7;
+}
+.card .view{
+    align-self: flex-start;
+    margin-top: -25px;
+    margin-left: 55px; 
+    opacity: 0.7;
+}
+@media (max-width:1520px) {
+    .videoMain {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        margin-left: 300px;
+        gap: 1rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width:600px) {
+    .videoMain {
+        display: grid;
+        grid-template-columns: 1fr ;
+        margin-left: 0px;
+        gap: 1rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+}
+@media (max-width:390px) {
+    .videoMain {
+        display: grid;
+        grid-template-columns: 1fr ;
+        margin-left: 0px;
+        gap: 0.5rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 280px;
+        height: 240px;
+        border: 2px solid #000;
+        padding: 0.4em;
+    }
+    .card img {
+        width: 270px;
+        height: 270px;
+        cursor: pointer;
+    }
+    .logo img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        margin-left: 10px;
+    
+    }
+   
+    
+    .card h4 {
+        align-self: flex-start;
+        margin-top: -15px;
+        margin-left: 55px;
+        opacity: 0.7;
+        font-size: 0.9em;
+    }
+    .logo .title {
+       line-height: 15px;
+       
+    }
+}
